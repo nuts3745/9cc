@@ -13,7 +13,7 @@ int main(int argc, char **argv) {
   printf(".globl main\n\n");
   printf("main:\n");
   printf("\tmov rax, %ld\n", strtol(p, &p, 10));
-  
+
   while (*p) {
     if (*p == '+') {
       p++;
